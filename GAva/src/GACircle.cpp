@@ -17,8 +17,8 @@ GACircle::GACircle(int Y, int X, float R) : Y(Y), X(X), R(R) {
 void GACircle::draw() {
     if(isRotation) {
         glPushMatrix();
-	glTranslatef(X, Y, 0);
-        glRotatef(Rotation, 0, 0, 1000);
+	    glTranslatef(X, Y, 0);
+        glRotatef(Rotation, 0, 0, 1);
 	    glTranslatef(-X, -Y, 0);
     }
     glEnable(GL_ALPHA);
